@@ -33,9 +33,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `Windows`.
 * Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
-## 🚀 Instalando BicoOn
+## 📃 Swagger
 
-Para instalar o BicoOn, siga estas etapas:
+Para acessar a documentação BicoOn, siga estas etapas:
 
 Linux e macOS:
 ```
@@ -50,57 +50,28 @@ Windows:
 ## ☕ Usando <nBiconOnto>
 
 Para acessar os endpoints da Entidade Clientes, acesse:
-``` GET - /bicoon/clientes (Lista todos os clientes cadastrados) ```
+``` GET - /bicoon/clientes (Lista todos os clientes cadastrados) 
+  ```
+  
 ```
-GET - /bicoon/clientes (Detalhe um cliente pelo ID)
+  GET - /bicoon/clientes (Detalhe um cliente pelo ID)
+  ```
+  
 ```
+  POST - /bicoon/clientes
+  ```
 ```
-POST - /bicoon/clientes
+  PUT - /bicoon/clientes/{id} 
+  ```
 ```
-```
-PUT - /bicoon/clientes/{id} 
-```
-```
-DELETE - /bicoon/clientes/{id} 
-```
+  DELETE - /bicoon/clientes/{id} 
+  ```
 
-Para acessar os endpoints da Entidade Prestador, acesse:
+## ☎️ Suporte BicoOn
+  
+Caso tenha dúvidas, reclamações ou sugestões, contate os desenvolvedores. 
 
-```
-GET - /bicoon/clientes (Lista todos os clientes cadastrados)
-```
-
-```
-GET - /bicoon/clientes (Detalhe um cliente pelo ID)
-```
-
-```
-POST - /bicoon/clientes
-```
-
-```
-PUT - /bicoon/clientes/{id} 
-```
-
-```
-DELETE - /bicoon/clientes/{id} 
-```
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
-## 📫 Contribuindo para BicoOn
-<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
-Para contribuir com BicoOn, siga estas etapas:
-
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 🤝 Colaboradores
+## 👩‍💻👨‍💻 Desenvolvedores
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
@@ -180,7 +151,7 @@ Agradecemos a empresa por todo apoio prestado neste projeto.
 <sub>
   <div>
     <a href="https://compass.uol/pt/" target="_blank" rel="noreferrer" rel="noopener">
-      <img src="compass.uol.png" alt="compass.uol"/><br>
+      <img src="compass.uol.png" alt="compass.uol" width="300px;"/><br>
     </a></br>
   </div>
 </sub>
