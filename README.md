@@ -42,16 +42,16 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para acessar a documentação BicoOn, siga estas etapas:
 
-1. Baixe o arquivo BicoOnApi <span><a href="https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnApi.yml" target="_blank" rel="noreferrer" rel="noopener"> <b> aqui </b> </a>.</span>
-
-2. Abra o Swagger Editor
-
-
-, caso opte pela versão web, clique no link:
-```
-https://editor.swagger.io/?_ga=2.185135209.135771497.1650906792-744667863.1647286784
-```
-Em seguida é só importar, clique em File, Import File e selecione o arquivo BicoOnApi.
+1. Baixe o arquivo:</br>
+<div>
+  <a href="https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnApi.yml" target="_blank" rel="noreferrer"     rel="noopener"> <b> BicoOn </b> </a>.
+</div>
+2. Abra o Swagger Online: </br>
+<div>
+  <a href="https://editor.swagger.io/?_ga=2.185135209.135771497.1650906792-744667863.1647286784" target="_blank" rel="noreferrer"     rel="noopener"> <b> Swagger Editor </b> </a>.
+</div>
+3. Em seguida é só importar, clique em File, Import File e selecione o arquivo BicoOnApi. </br>
+4. Por fim, execute o aplicação BicoOnApplication, após isso a documentação estará pronta para uso. 
 
 ## ☕ Usando <nBiconOnto>
 
