@@ -20,7 +20,33 @@
 
 > O BicoOn é um projeto desenvolvido para conectar prestadores de serviços informais e clientes, ele permite que pessoas acessem o contato e os serviços de diferentes profissionais por cidade.
 
-### Ajustes e melhorias
+## ⚙️ Funcionalidades
+
+- [x] Autenticação usuários Clientes e Prestadores
+- [x] Clientes podem se cadastrar enviando:
+  - Nome
+  - Email
+  - Senha
+  - Cidade
+  - Sexo
+  - [x] Visualizar o contato de Prestadores por cidade e categoria:
+  - [x] Avaliar o serviço de Prestadores com:
+  - Nota
+  - Comentário
+- [x] Prestadores podem se cadastrar enviando:
+  - Nome
+  - Telefone
+  - Cidade
+  - Email
+  - Senha
+  - Sexo
+  - [x] Cadastrar Categorias de Serviço com:
+  - Nome
+  - [x] Cadastrar Serviços com:
+  - Categoria
+  - Descrição
+
+## 📈 Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
@@ -35,82 +61,92 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você instalou a  linguagem `Java JDK 17 LTS`
+* Você instalou a  linguagem `Java JDK 17 LTS`.
+* Você instalou o `H2 Database`.
+* Você instalou a IDE `IntelliJ` ou `Eclipse Spring`. 
 * Você tem uma máquina `Windows 10 ou 11`.
+
+## 🚀 Instalação
+
+Passo-a-passo que informa o que você deve executar para ter um ambiente de desenvolvimento em execução.
+
+```
+# Clone este repositório
+$ git clone git@github.com:yhonathanpavan/Compass.UOL-Projeto-BicoOn.git
+
+# Acesse a pasta do projeto no seu terminal
+$ code .
+
+# Selecione a IDE desejada
+
+# Execute a aplicação em modo de desenvolvimento
+
+# A aplicação será aberta na porta:8080 - acesse http://localhost:8080
+```
 
 ## 📃 Swagger
 
-Para acessar a documentação BicoOn, siga estas etapas:
-
-1. Baixe o arquivo:</br>
-<div>
-  <a href="https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnApi.yml" target="_blank" rel="noreferrer"     rel="noopener"> <b> BicoOn </b> </a>.
-</div>
-2. Abra o Swagger Online: </br>
-<div>
-  <a href="https://editor.swagger.io/?_ga=2.185135209.135771497.1650906792-744667863.1647286784" target="_blank" rel="noreferrer"     rel="noopener"> <b> Swagger Editor </b> </a>.
-</div>
-3. Em seguida é só importar, clique em File, Import File e selecione o arquivo BicoOnApi. </br>
+Para acessar a documentação BicoOn, baixe o arquivo e siga as etapas:
+1. [BicoOnApi](https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnApi.yml)
+2. Com o [Swagger Editor](https://editor.swagger.io/?_ga=2.185135209.135771497.1650906792-744667863.1647286784)
+3. Em seguida importe, clique em File, Import File e selecione o arquivo BicoOnApi. 
 4. Por fim, execute o aplicação BicoOnApplication, após isso a documentação estará pronta para uso. 
 
-## ☕ Usando <nBiconOnto>
+## 🧑‍🚀 Postman
 
+Para acessar a collection BicoOn, baixe o arquivo e siga as etapas:
+1. [BicoOnCollection](https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnCollection.json)
+2. Abra a plataforma [Postman](https://www.postman.com/product/what-is-postman/)
+3. Em seguida importe, clique em Import e selecione o arquivo BicoOnCollection.
+4. Por fim, execute o aplicação BicoOnApplication, após isso a plataforma estará pronta para uso. 
+
+## 📌 EndPoints
 Para acessar os endpoints da Entidade Cliente, acesse:
 ```
   GET - /bicoon/clientes (Lista todos os clientes cadastrados) 
-```
-```
   GET - /bicoon/clientes/{id} (Detalha o cadastro de um cliente existente pelo ID)
-```
-```
   POST - /bicoon/clientes (Cadastra um novo cliente) 
-```
-```
   PUT - /bicoon/clientes/{id} (Atualiza o cadastro de um cliente existente pelo ID) 
-```
-```
   DELETE - /bicoon/clientes/{id} (Remove o cadastro de um cliente existente pelo ID) 
 ```
-
 Para acessar os endpoints da Entidade Prestador, acesse:
 ```
   GET - /bicoon/prestadores (Lista todos os prestadores cadastrados) 
-```
-```
   GET - /bicoon/prestadores (Detalha o cadastro de um prestador existente pelo ID)
-```
-```
   POST - /bicoon/prestadores (Cadastra um novo prestador) 
-```
-```
   PUT - /bicoon/prestadores/{id} (Atualiza o cadastro de um prestador existente pelo ID) 
-```
-```
   DELETE - /bicoon/prestadores/{id} (Remove o cadastro de um prestador existente pelo ID) 
 ```
-  
 Para acessar os endpoints da Entidade Avaliação, acesse:
 ```
-  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId}(Cadastra um nova avaliação para um Prestador) 
-```
-```
+  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId} (Cadastra um nova avaliação para um Prestador) 
   PUT - /bicoon/avaliacoes/{id} (Atualiza uma avaliação existente pelo ID) 
-```
-```
   DELETE - /bicoon/avaliacoes/{id} (Remove uma avaliação existente pelo ID) 
 ```
-  
 Para acessar os endpoints da Entidade Serviço, acesse:
 ```
-  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId}(Cadastra um nova avaliação para um Prestador) 
+  GET - /bicoon/servicos (Lista todos os serviços) 
+  PUT - /bicoon/servicos/{id} (Atualiza um serviço existente pelo ID) 
+  DELETE - /bicoon/servicos/{id} (Remove um serviço existente pelo ID) 
 ```
+Para acessar os endpoints da Entidade Categoria, acesse:
 ```
-  PUT - /bicoon/avaliacoes/{id} (Atualiza uma avaliação existente pelo ID) 
+  GET - /bicoon/categorias (Lista todos as categorias) 
+  PUT - /bicoon/categorias/{id} (Atualiza uma categoria existente pelo ID) 
+  DELETE - /bicoon/categorias/{id} (Remove uma categoria existente pelo ID) 
 ```
-```
-  DELETE - /bicoon/avaliacoes/{id} (Remove uma avaliação existente pelo ID) 
-```
+
+## 🚧🛠️ Tecnologias e Ferramentas
   
+Foram usadas as seguintes tecnologias e ferramentas para a construção da API: 
+* [Java](https://www.java.com/pt-BR/) - Linguagem de Programação
+* [SpringBoot](https://spring.io/) - FrameWork Java
+* [Git](https://git-scm.com/) - Ferramenta de Versionamento de Código
+* [H2](https://www.h2database.com/html/main.html) - Sistema de gerenciamento de banco de dados relacional
+* [IntelliJIDEA](https://www.jetbrains.com/pt-br/idea/) - IDE (Ambiente de desenvolvimento integrado)
+* [Postman](https://www.postman.com/) - Plataforma da API
+* [Swagger](https://swagger.io/tools/swagger-editor/) - Editar de design da API
+* [Windows](https://www.microsoft.com/pt-br/windows/?r=1) - Sistema Operacional
 
 ## ☎️ Suporte BicoOn
   
