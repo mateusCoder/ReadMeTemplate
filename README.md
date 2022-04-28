@@ -61,10 +61,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você instalou a  linguagem `Java JDK 17 LTS`.
-* Você instalou o `H2 Database`.
-* Você instalou a IDE `IntelliJ` ou `Eclipse Spring`. 
-* Você tem uma máquina `Windows 10 ou 11`.
+* Ter instalado a  linguagem `Java JDK 17 LTS`.
+* Ter instalado a IDE `IntelliJIDEA` ou `Eclipse Spring`. 
+* Ter uma máquina `Windows 10` ou `11`.
 
 ## 🚀 Instalação
 
@@ -100,39 +99,44 @@ Para acessar a collection BicoOn, baixe o arquivo e siga as etapas:
 3. Em seguida importe, clique em Import e selecione o arquivo BicoOnCollection.
 4. Por fim, execute o aplicação BicoOnApplication, após isso a plataforma estará pronta para uso. 
 
+## 🔐 Segurança
+
+## 🕷️ Testes
+
+
 ## 📌 EndPoints
 Para acessar os endpoints da Entidade Cliente, acesse:
 ```
-  GET - /bicoon/clientes (Lista todos os clientes cadastrados) 
-  GET - /bicoon/clientes/{id} (Detalha o cadastro de um cliente existente pelo ID)
-  POST - /bicoon/clientes (Cadastra um novo cliente) 
-  PUT - /bicoon/clientes/{id} (Atualiza o cadastro de um cliente existente pelo ID) 
+  GET - /bicoon/clientes         (Lista todos os clientes cadastrados) 
+  GET - /bicoon/clientes/{id}    (Detalha o cadastro de um cliente existente pelo ID)
+  POST - /bicoon/clientes        (Cadastra um novo cliente) 
+  PUT - /bicoon/clientes/{id}    (Atualiza o cadastro de um cliente existente pelo ID) 
   DELETE - /bicoon/clientes/{id} (Remove o cadastro de um cliente existente pelo ID) 
 ```
 Para acessar os endpoints da Entidade Prestador, acesse:
 ```
-  GET - /bicoon/prestadores (Lista todos os prestadores cadastrados) 
-  GET - /bicoon/prestadores (Detalha o cadastro de um prestador existente pelo ID)
-  POST - /bicoon/prestadores (Cadastra um novo prestador) 
-  PUT - /bicoon/prestadores/{id} (Atualiza o cadastro de um prestador existente pelo ID) 
+  GET - /bicoon/prestadores         (Lista todos os prestadores cadastrados) 
+  GET - /bicoon/prestadores         (Detalha o cadastro de um prestador existente pelo ID)
+  POST - /bicoon/prestadores        (Cadastra um novo prestador) 
+  PUT - /bicoon/prestadores/{id}    (Atualiza o cadastro de um prestador existente pelo ID) 
   DELETE - /bicoon/prestadores/{id} (Remove o cadastro de um prestador existente pelo ID) 
 ```
 Para acessar os endpoints da Entidade Avaliação, acesse:
 ```
-  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId} (Cadastra um nova avaliação para um Prestador) 
-  PUT - /bicoon/avaliacoes/{id} (Atualiza uma avaliação existente pelo ID) 
-  DELETE - /bicoon/avaliacoes/{id} (Remove uma avaliação existente pelo ID) 
+  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId} (Cadastra uma nova avaliação para um Prestador) 
+  PUT - /bicoon/avaliacoes/{id}                                            (Atualiza uma avaliação existente pelo ID) 
+  DELETE - /bicoon/avaliacoes/{id}                                         (Remove uma avaliação existente pelo ID) 
 ```
 Para acessar os endpoints da Entidade Serviço, acesse:
 ```
-  GET - /bicoon/servicos (Lista todos os serviços) 
-  PUT - /bicoon/servicos/{id} (Atualiza um serviço existente pelo ID) 
+  GET - /bicoon/servicos         (Lista todos os serviços) 
+  PUT - /bicoon/servicos/{id}    (Atualiza um serviço existente pelo ID) 
   DELETE - /bicoon/servicos/{id} (Remove um serviço existente pelo ID) 
 ```
 Para acessar os endpoints da Entidade Categoria, acesse:
 ```
-  GET - /bicoon/categorias (Lista todos as categorias) 
-  PUT - /bicoon/categorias/{id} (Atualiza uma categoria existente pelo ID) 
+  GET - /bicoon/categorias         (Lista todos as categorias) 
+  PUT - /bicoon/categorias/{id}    (Atualiza uma categoria existente pelo ID) 
   DELETE - /bicoon/categorias/{id} (Remove uma categoria existente pelo ID) 
 ```
 
