@@ -35,24 +35,23 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você instalou a  linguagem `Java` na versão `JDK 17`
-* Você instalou a IDE `IntelliJ` na versão `colocar versão`
-* Você tem uma máquina `Windows`.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+* Você instalou a  linguagem `Java JDK 17 LTS`
+* Você tem uma máquina `Windows 10 ou 11`.
 
 ## 📃 Swagger
 
 Para acessar a documentação BicoOn, siga estas etapas:
 
-Linux e macOS:
-```
-<comando_de_instalação>
-```
+1. Baixe o arquivo BicoOnApi <span><a href="https://github.com/yhonathanpavan/Compass.UOL-Projeto-BicoOn/blob/master/BicoOnApi.yml" target="_blank" rel="noreferrer" rel="noopener"> <b> aqui </b> </a>.</span>
 
-Windows:
+2. Abra o Swagger Editor
+
+
+, caso opte pela versão web, clique no link:
 ```
-<comando_de_instalação>
+https://editor.swagger.io/?_ga=2.185135209.135771497.1650906792-744667863.1647286784
 ```
+Em seguida é só importar, clique em File, Import File e selecione o arquivo BicoOnApi.
 
 ## ☕ Usando <nBiconOnto>
 
