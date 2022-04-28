@@ -1,9 +1,16 @@
 # BicoOn
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/>
-  <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <a href="https://www.java.com/pt-BR/" target="_blank" rel="noreferrer" rel="noopener">
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+  </a>
+  <a href="https://spring.io/" target="_blank" rel="noreferrer" rel="noopener">
+    <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring"/>
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer" rel="noopener">
+    <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  </a>
+  <a href="https://www.microsoft.com/pt-br/windows/?r=1" target="_blank" rel="noreferrer" rel="noopener">
   <img src="https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/>
 </div></br>
 
@@ -11,7 +18,7 @@
   <img src="BicoOn.jpg" alt="BicoOn" height="350px">
 </div></br>
 
-> O BicoOn é um projeto desenvolvido para conectar prestadores de serviços informais e clientes, ele permite que pessoas acessem o contato e os serviços de diferentes profissionais de uma determinada cidade.
+> O BicoOn é um projeto desenvolvido para conectar prestadores de serviços informais e clientes, ele permite que pessoas acessem o contato e os serviços de diferentes profissionais por cidade.
 
 ### Ajustes e melhorias
 
@@ -49,23 +56,62 @@ Windows:
 
 ## ☕ Usando <nBiconOnto>
 
-Para acessar os endpoints da Entidade Clientes, acesse:
-``` GET - /bicoon/clientes (Lista todos os clientes cadastrados) 
-  ```
+Para acessar os endpoints da Entidade Cliente, acesse:
+```
+  GET - /bicoon/clientes (Lista todos os clientes cadastrados) 
+```
+```
+  GET - /bicoon/clientes/{id} (Detalha o cadastro de um cliente existente pelo ID)
+```
+```
+  POST - /bicoon/clientes (Cadastra um novo cliente) 
+```
+```
+  PUT - /bicoon/clientes/{id} (Atualiza o cadastro de um cliente existente pelo ID) 
+```
+```
+  DELETE - /bicoon/clientes/{id} (Remove o cadastro de um cliente existente pelo ID) 
+```
+
+Para acessar os endpoints da Entidade Prestador, acesse:
+```
+  GET - /bicoon/prestadores (Lista todos os prestadores cadastrados) 
+```
+```
+  GET - /bicoon/prestadores (Detalha o cadastro de um prestador existente pelo ID)
+```
+```
+  POST - /bicoon/prestadores (Cadastra um novo prestador) 
+```
+```
+  PUT - /bicoon/prestadores/{id} (Atualiza o cadastro de um prestador existente pelo ID) 
+```
+```
+  DELETE - /bicoon/prestadores/{id} (Remove o cadastro de um prestador existente pelo ID) 
+```
   
+Para acessar os endpoints da Entidade Avaliação, acesse:
 ```
-  GET - /bicoon/clientes (Detalhe um cliente pelo ID)
-  ```
+  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId}(Cadastra um nova avaliação para um Prestador) 
+```
+```
+  PUT - /bicoon/avaliacoes/{id} (Atualiza uma avaliação existente pelo ID) 
+```
+```
+  DELETE - /bicoon/avaliacoes/{id} (Remove uma avaliação existente pelo ID) 
+```
   
+Para acessar os endpoints da Entidade Serviço, acesse:
 ```
-  POST - /bicoon/clientes
-  ```
+  POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId}(Cadastra um nova avaliação para um Prestador) 
 ```
-  PUT - /bicoon/clientes/{id} 
-  ```
 ```
-  DELETE - /bicoon/clientes/{id} 
-  ```
+  PUT - /bicoon/avaliacoes/{id} (Atualiza uma avaliação existente pelo ID) 
+```
+```
+  DELETE - /bicoon/avaliacoes/{id} (Remove uma avaliação existente pelo ID) 
+```
+  
 
 ## ☎️ Suporte BicoOn
   
@@ -95,7 +141,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto da Elaine Cristina"/><br>
+        <img src="https://avatars.githubusercontent.com/u/61952169?v=4" width="100px;" alt="Foto da Elaine Cristina"/><br>
         <sub>
           <div align="center">
             <b>Elaine Cristina</b></br></br>
