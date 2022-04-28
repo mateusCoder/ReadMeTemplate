@@ -20,7 +20,7 @@
 
 > O BicoOn é um projeto desenvolvido para conectar prestadores de serviços informais e clientes, ele permite que pessoas acessem o contato e os serviços de diferentes profissionais por cidade.
 
-[Apoio](#Apoio)
+[Apoio](##Apoio)
 
 ## ⚙️ Funcionalidades
 
