@@ -102,7 +102,9 @@ Para acessar a collection BicoOn, baixe o arquivo e siga as etapas:
 ## 🔐 Segurança
 
 ## 🕷️ Testes
-
+Foram usadas as seguintes tecnologias e ferramentas para Testes da API: 
+* [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) - Framework de Testes
+* [Mockito](https://site.mockito.org/) - Estrutura de Testes
 
 ## 📌 EndPoints
 Para acessar os endpoints da Entidade Cliente, acesse:
