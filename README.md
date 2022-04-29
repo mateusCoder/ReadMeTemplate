@@ -100,11 +100,14 @@ Para acessar a collection BicoOn, baixe o arquivo e siga as etapas:
 4. Por fim, execute o aplicação BicoOnApplication, após isso a plataforma estará pronta para uso. 
 
 ## 🔐 Segurança
+O projeto BicoOn segue padrões de segurança API REST, sendo os seguintes endpoints liberados para acesso de qualquer usuario:
+```
+  POST - /bicoon/clientes      (O cadastro de clientes é aberto para que seja possível criar um acesso) 
+  POST - /bicoon/prestadores   (O cadastro de prestadores é aberto para que seja possível criar um acesso) 
+  POST - /bicoon/auth          (Autetica de acordo com as credenciais se o usuário tem acesso)
+```
 
-## 🕷️ Testes
-Foram usadas as seguintes tecnologias e ferramentas para Testes da API: 
-* [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) - Framework de Testes
-* [Mockito](https://site.mockito.org/) - Estrutura de Testes
+
 
 ## 📌 EndPoints
 Para acessar os endpoints da Entidade Cliente, acesse:
@@ -141,6 +144,11 @@ Para acessar os endpoints da Entidade Categoria, acesse:
   PUT - /bicoon/categorias/{id}    (Atualiza uma categoria existente pelo ID) 
   DELETE - /bicoon/categorias/{id} (Remove uma categoria existente pelo ID) 
 ```
+
+## 🕷️ Testes
+Foram usadas as seguintes tecnologias e ferramentas para Testes da API: 
+* [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) - Framework de Testes
+* [Mockito](https://site.mockito.org/) - Estrutura de Testes
 
 ## 🚧🛠️ Tecnologias e Ferramentas
   
