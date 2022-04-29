@@ -102,12 +102,11 @@ Para acessar a collection BicoOn, baixe o arquivo e siga as etapas:
 ## 🔐 Segurança
 O projeto BicoOn segue padrões de segurança API REST, sendo os seguintes endpoints liberados para acesso de qualquer usuario:
 ```
-  POST - /bicoon/clientes      (O cadastro de clientes é aberto para que seja possível criar um acesso) 
-  POST - /bicoon/prestadores   (O cadastro de prestadores é aberto para que seja possível criar um acesso) 
+  POST - /bicoon/clientes      (O cadastro de clientes é aberto para que seja possível criar uma conta do tipo Cliente) 
+  POST - /bicoon/prestadores   (O cadastro de prestadores é aberto para que seja possível criar uma conta do tipo Prestador) 
   POST - /bicoon/auth          (Autetica de acordo com as credenciais se o usuário tem acesso)
 ```
-
-
+Para acessar os endpoints restantes é necessário estar autenticado. 
 
 ## 📌 EndPoints
 Para acessar os endpoints da Entidade Cliente, acesse:
