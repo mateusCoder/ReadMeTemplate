@@ -109,7 +109,7 @@ O projeto BicoOn segue padrões de segurança API REST, sendo os seguintes endpo
 Para acessar os endpoints restantes é necessário estar autenticado. 
 
 ## 📌 EndPoints
-Para acessar os endpoints da Entidade Cliente, acesse:
+Para acessar os endpoints da Entidade Cliente:
 ```
   GET - /bicoon/clientes         (Lista todos os clientes cadastrados) 
   GET - /bicoon/clientes/{id}    (Detalha o cadastro de um cliente existente pelo ID)
@@ -117,7 +117,7 @@ Para acessar os endpoints da Entidade Cliente, acesse:
   PUT - /bicoon/clientes/{id}    (Atualiza o cadastro de um cliente existente pelo ID) 
   DELETE - /bicoon/clientes/{id} (Remove o cadastro de um cliente existente pelo ID) 
 ```
-Para acessar os endpoints da Entidade Prestador, acesse:
+Para acessar os endpoints da Entidade Prestador:
 ```
   GET - /bicoon/prestadores         (Lista todos os prestadores cadastrados) 
   GET - /bicoon/prestadores         (Detalha o cadastro de um prestador existente pelo ID)
@@ -125,23 +125,30 @@ Para acessar os endpoints da Entidade Prestador, acesse:
   PUT - /bicoon/prestadores/{id}    (Atualiza o cadastro de um prestador existente pelo ID) 
   DELETE - /bicoon/prestadores/{id} (Remove o cadastro de um prestador existente pelo ID) 
 ```
-Para acessar os endpoints da Entidade Avaliação, acesse:
+Para acessar os endpoints da Entidade Avaliação:
 ```
   POST - /bicoon/avaliacoes/clientes/{clienteId}/prestadores/{prestadorId} (Cadastra uma nova avaliação para um Prestador) 
   PUT - /bicoon/avaliacoes/{id}                                            (Atualiza uma avaliação existente pelo ID) 
   DELETE - /bicoon/avaliacoes/{id}                                         (Remove uma avaliação existente pelo ID) 
 ```
-Para acessar os endpoints da Entidade Serviço, acesse:
+Para acessar os endpoints da Entidade Serviço:
 ```
   GET - /bicoon/servicos         (Lista todos os serviços) 
   PUT - /bicoon/servicos/{id}    (Atualiza um serviço existente pelo ID) 
   DELETE - /bicoon/servicos/{id} (Remove um serviço existente pelo ID) 
 ```
-Para acessar os endpoints da Entidade Categoria, acesse:
+
+<b> ⚠️ Endpoints de Acesso do Administrador ⚠️</b> </br>
+Para acessar os endpoints da Entidade Categoria:
 ```
   GET - /bicoon/categorias         (Lista todos as categorias) 
   PUT - /bicoon/categorias/{id}    (Atualiza uma categoria existente pelo ID) 
   DELETE - /bicoon/categorias/{id} (Remove uma categoria existente pelo ID) 
+```
+
+Para acessar os endpoints do Monitoramento:
+```
+  GET - /actuator         (Exibe os Endpoints disponíveis) 
 ```
 
 ## 🕷️ Testes
@@ -159,6 +166,7 @@ Foram usadas as seguintes tecnologias e ferramentas para a construção da API:
 * [IntelliJIDEA](https://www.jetbrains.com/pt-br/idea/) - IDE (Ambiente de desenvolvimento integrado)
 * [Postman](https://www.postman.com/) - Plataforma da API
 * [Swagger](https://swagger.io/tools/swagger-editor/) - Editar de design da API
+* [Actuator](https://www.zup.com.br/blog/spring-actuator) - Dependência de Monitoramento
 * [Windows](https://www.microsoft.com/pt-br/windows/?r=1) - Sistema Operacional
 
 ## ☎️ Suporte BicoOn
